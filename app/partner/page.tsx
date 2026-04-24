@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import PartnerPage from "@/components/registration/PartnerPage";
+import PartnerPage from "@/components/pages/PartnerPage";
 
 // Metadata for SEO - Arabic
 export const metadata: Metadata = {

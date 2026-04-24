@@ -68,3 +68,9 @@ export const stagger = (staggerTime = 0.09, delay = 0) => ({
 // ─── Viewport defaults ────────────────────────────────────────────────────────
 export const VIEWPORT = { once: true, margin: "-80px" } as const;
 export const VIEWPORT_NEAR = { once: true, margin: "-40px" } as const;
+
+export const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
+export const SPRING = { type: "spring" as const, stiffness: 400, damping: 28 };
+
+
+export const VP = { once: true, margin: "-60px" } as const;

@@ -19,6 +19,7 @@ import {
   ChevronDown,
   Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 // ─── Animation tokens ─────────────────────────────────────────────────────────
 const EASE_EXPO: [number, number, number, number] = [0.16, 1, 0.3, 1];
@@ -532,29 +533,20 @@ export default function Hero() {
           {/* CTAs */}
           <motion.div className="ctas" variants={fadeUp}>
             {/* Magnetic primary */}
-            <motion.button
-              ref={btnRef}
+            <Link
+              href="/partner"
               className="btn-p"
-              style={{ x: mx, y: my }}
-              onMouseMove={onMove}
-              onMouseLeave={onLeave}
-              whileHover={
-                reduced ? {} : {
-                  scale: 1.03, y: -3,
-                  boxShadow: "0 10px 34px rgba(234,88,12,0.44), 0 1px 0 rgba(255,255,255,0.2) inset",
-                  transition: SPRING,
-                }
-              }
-              whileTap={reduced ? {} : { scale: 0.96 }}
+           
             >
               <motion.span
                 className="btn-p-shine"
                 initial={{ x: "-120%" }}
                 whileHover={reduced ? {} : { x: "120%", transition: { duration: 0.55, ease: EASE_EXPO } }}
+              
               />
-              <span>ابدأ مبيعاتك الآن</span>
+              <span>ادخل تفاصيل مطعمك الآن</span>
               <ArrowLeft size={15} strokeWidth={2.5} />
-            </motion.button>
+            </Link>
 
             {/* Secondary */}
             <motion.button

@@ -31,7 +31,7 @@ const INITIAL: PartnerFormData = {
   location:"",
   agreed: false,
 };
-
+ 
 function validatePartnerForm(form: PartnerFormData): string | null {
   if (!form.applicant_name.trim()) return "يرجى إدخال اسم مقدم الطلب";
   if (!form.position.trim()) return "يرجى إدخال المنصب";

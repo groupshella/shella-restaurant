@@ -14,10 +14,11 @@ const NAV_LINKS = [
 ] as const;
 
 const CONTACT = [
-  { Icon: MapPin,  text: "حي طويق ونمار، الرياض" },
-  { Icon: Phone,   text: "920 000 000" },
-  { Icon: Mail,    text: "hello@shella.sa" },
+  { Icon: MapPin, text: "مدينه الرياض، مجمع ليسن فيالي، مبنى 13" },
+  { Icon: Phone,  text: "0599966674" },
+  { Icon: Mail,   text: "info@shellafood.com" },
 ] as const;
+
 
 export default function Footer() {
   return (
